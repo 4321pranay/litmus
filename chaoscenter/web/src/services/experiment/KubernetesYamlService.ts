@@ -96,7 +96,7 @@ export class KubernetesYamlService extends ExperimentYamlService {
         },
         container: {
           name: '',
-          image: `docker.io/litmuschaos/litmus-checker:2.11.0`,
+          image: `##UPDATE_REGISTRY##/litmuschaos/litmus-checker:latest`,
           args: [`-file=/tmp/chaosengine-${faultName}.yaml`, '-saveName=/tmp/engine-name']
         }
       });
@@ -230,7 +230,7 @@ export class KubernetesYamlService extends ExperimentYamlService {
         },
         container: {
           name: '',
-          image: `docker.io/litmuschaos/litmus-checker:2.11.0`,
+          image: `##UPDATE_REGISTRY##/litmuschaos/litmus-checker:latest`,
           args: [`-file=/tmp/chaosengine-${faultName}.yaml`, '-saveName=/tmp/engine-name']
         }
       });
